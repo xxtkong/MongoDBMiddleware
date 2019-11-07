@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Repository\Repository.csproj" />
+    <ProjectReference Include="..\STSys.Core.Log\STSys.Core.Log.csproj" />
+    <ProjectReference Include="..\STSys.Core.MQMiddleware\STSys.Core.MQMiddleware.csproj" />
+    <ProjectReference Include="..\STSys.Core.MQ\STSys.Core.MQ.csproj" />
+  </ItemGroup>
+
+</Project>
